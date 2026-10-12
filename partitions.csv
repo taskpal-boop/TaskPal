@@ -1,0 +1,8 @@
+# TaskPal partition table (16MB, single app). See README.md §3
+# otadata at 0xE000 is kept because the Arduino build always flashes boot_app0.bin there.
+# Name,   Type, SubType,  Offset,   Size
+nvs,      data, nvs,      0x9000,   0x5000
+otadata,  data, ota,      0xE000,   0x2000
+app0,     app,  ota_0,    0x10000,  0x400000
+spiffs,   data, spiffs,   0x410000, 0xBE0000
+coredump, data, coredump, 0xFF0000, 0x10000

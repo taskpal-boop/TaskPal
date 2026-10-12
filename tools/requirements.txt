@@ -1,0 +1,7 @@
+# conda env: conda create -n taskpal python=3.11 pip && conda run -n taskpal python -m pip install -r tools/requirements.txt
+# unit-test compiler (D14): conda install -n taskpal -c conda-forge ucrt64-gcc-toolchain
+pillow>=10
+resvg-py>=0.1
+freetype-py>=2.4
+
+pyserial>=3.5
